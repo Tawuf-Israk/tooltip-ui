@@ -7,5 +7,5 @@ This project is my submission for the [Tooltip UI](https://roadmap.sh/projects/t
 The Tooltip UI delivers a smooth, responsive way to show contextual hints anywhere in a webpage. Whether it's explaining form fields, guiding users through a workflow, or offering quick definitions, this component improves usability without cluttering the interface.
 
 🚀 Live Demo
-
+Live Preview:https://tawuf-israk.github.io/tooltip-ui/
 Repository: https://github.com/Tawuf-Israk/tooltip-ui
