@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container{
+  border: 3px solid black;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 500px;
+  margin: 100px auto;
+}
+
+.container p{
+  font-size: 1.2rem;
+}
+
+.nav-menu{
+  margin-top:60px;
+}
+
+.separator{
+  color: #999;
+}
+.nav-menu a{
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.tooltip{
+  position: relative;
+}
+
+.tooltip::before{
+  content: "Here is everything I have built";
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  margin-bottom: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip::after{
+  content: "";
+  border: 10px solid transparent;
+  border-top-color: black;
+  position: absolute;
+  bottom: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after{
+  visibility: visible;
+  opacity: 1;
+}
